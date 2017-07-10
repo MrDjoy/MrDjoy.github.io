@@ -256,6 +256,271 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/11/python-keyword/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MrDjoy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉丁的白帽">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/11/python-keyword/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-11T00:20:20+08:00">
+                2017-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><p>title:python关键字<br>date:2017-7-11<br>tag:python</p>
+<hr>
+<p>##一、python关键字<br>Python2有31个关键字分别是<br>and del from not while<br>as elif global or with<br>assert else if pass yield<br>break except import print<br>class exec in raise<br>continue finally is return<br>def for lambda try</p>
+<p>Python3中，exec 不再是关键字，但nonlocal是一个新的关键字。</p>
+<p>###1.循环、判断</p>
+<p>####1.1 if语法（if elif else）<br>注意冒号和严格的缩进</p>
+<pre><code>if condition1:
+    do something
+elif condition2:
+    do another thing
+else:
+    also do something
+</code></pre><p>这种冒号和严格的缩进通常被称之为 复合语句<br>复合语句：由头部和主体组成的一组语句。代码头部以冒号(:)结尾，代码头部相对于代码主体进行缩进。</p>
+<p>####1.2 while语法</p>
+<p>####1.3 try和except异常捕获</p>
+<pre><code>try:
+   语句块
+except:
+   语句块
+</code></pre><p>首先执行try语句块，如果try语句块没有问题，跳过except语句块。如果try语句块发生异常，执行except语句块<br>一个温度转换程序</p>
+<pre><code>inp=raw_input(&apos;enter f temperature:&apos;)
+try:
+    fahr=float(inp)
+    cel=(fahr-32.0)*5.0/9.0
+    print cel
+except:
+    print &apos;please enter a number&apos;
+</code></pre><p>首先通过raw_input()函数捕获外界输入，并赋值给inp变量，如果此时输入不是数字，执行except语句块</p>
+<p>####1.4 def定义新函数</p>
+<pre><code>def func():
+    print(&quot;this is a function&quot;)
+</code></pre><p>函数定义的第一行叫做函数头，剩余的部分叫做函数体。函数头必须以冒号结束，函数体必须缩进。按照惯例，一般缩进4个空格。</p>
+<p>##二、python 多重赋值<br>python语言可以多重赋值（multiple assignment）</p>
+<pre><code>person1,person2,person3=&quot;ROSE&quot;,&quot;JACK&quot;,&quot;Djoy&quot;
+var1=var2=var3=&quot;apple&quot;
+</code></pre><p>注意：变量赋值前，右边首先完成计算。右边的表达式从左到右计算。<br>例如</p>
+<pre><code>&gt;&gt;&gt; # Fibonacci series:
+... # the sum of two elements defines the next
+... a, b = 0, 1
+&gt;&gt;&gt; while b &lt; 1000:
+...     print(b,end=&apos;,&apos;)
+...     a, b = b, a+b
+</code></pre><p>输出 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,<br>这里先算b=a+b再算a=b</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/29/XSS防御/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MrDjoy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉丁的白帽">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/29/XSS防御/" itemprop="url">XSS防御</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-29T00:30:06+08:00">
+                2017-06-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -412,7 +677,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
