@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="##一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exe">
+<meta name="description" content="一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exec">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python关键字">
 <meta property="og:url" content="http://yoursite.com/2017/07/11/python-keyword/index.html">
 <meta property="og:site_name" content="阿拉丁的白帽">
-<meta property="og:description" content="##一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exe">
-<meta property="og:updated_time" content="2017-07-10T16:30:21.852Z">
+<meta property="og:description" content="一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exec">
+<meta property="og:updated_time" content="2017-07-10T16:43:08.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python关键字">
-<meta name="twitter:description" content="##一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exe">
+<meta name="twitter:description" content="一、python关键字Python2有31个关键字分别是and del from not whileas elif global or withassert else if pass yieldbreak except import printclass exec in raisecontinue finally is returndef for lambda try Python3中，exec">
 
 
 
@@ -320,47 +320,18 @@
       
 
       
-        <p>##一、python关键字<br>Python2有31个关键字分别是<br>and del from not while<br>as elif global or with<br>assert else if pass yield<br>break except import print<br>class exec in raise<br>continue finally is return<br>def for lambda try</p>
+        <h2 id="一、python关键字"><a href="#一、python关键字" class="headerlink" title="一、python关键字"></a>一、python关键字</h2><p>Python2有31个关键字分别是<br>and del from not while<br>as elif global or with<br>assert else if pass yield<br>break except import print<br>class exec in raise<br>continue finally is return<br>def for lambda try</p>
 <p>Python3中，exec 不再是关键字，但nonlocal是一个新的关键字。</p>
-<p>###1.循环、判断</p>
-<p>####1.1 if语法（if elif else）<br>注意冒号和严格的缩进</p>
-<pre><code>if condition1:
-    do something
-elif condition2:
-    do another thing
-else:
-    also do something
-</code></pre><p>这种冒号和严格的缩进通常被称之为 复合语句<br>复合语句：由头部和主体组成的一组语句。代码头部以冒号(:)结尾，代码头部相对于代码主体进行缩进。</p>
-<p>####1.2 while语法</p>
-<p>####1.3 try和except异常捕获</p>
-<pre><code>try:
-   语句块
-except:
-   语句块
-</code></pre><p>首先执行try语句块，如果try语句块没有问题，跳过except语句块。如果try语句块发生异常，执行except语句块<br>一个温度转换程序</p>
-<pre><code>inp=raw_input(&apos;enter f temperature:&apos;)
-try:
-    fahr=float(inp)
-    cel=(fahr-32.0)*5.0/9.0
-    print cel
-except:
-    print &apos;please enter a number&apos;
-</code></pre><p>首先通过raw_input()函数捕获外界输入，并赋值给inp变量，如果此时输入不是数字，执行except语句块</p>
-<p>####1.4 def定义新函数</p>
-<pre><code>def func():
-    print(&quot;this is a function&quot;)
-</code></pre><p>函数定义的第一行叫做函数头，剩余的部分叫做函数体。函数头必须以冒号结束，函数体必须缩进。按照惯例，一般缩进4个空格。</p>
-<p>##二、python 多重赋值<br>python语言可以多重赋值（multiple assignment）</p>
-<pre><code>person1,person2,person3=&quot;ROSE&quot;,&quot;JACK&quot;,&quot;Djoy&quot;
-var1=var2=var3=&quot;apple&quot;
-</code></pre><p>注意：变量赋值前，右边首先完成计算。右边的表达式从左到右计算。<br>例如</p>
-<pre><code>&gt;&gt;&gt; # Fibonacci series:
-... # the sum of two elements defines the next
-... a, b = 0, 1
-&gt;&gt;&gt; while b &lt; 1000:
-...     print(b,end=&apos;,&apos;)
-...     a, b = b, a+b
-</code></pre><p>输出 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,<br>这里先算b=a+b再算a=b</p>
+<h3 id="循环、判断"><a href="#循环、判断" class="headerlink" title="循环、判断"></a>循环、判断</h3><h4 id="if语法（if-elif-else）"><a href="#if语法（if-elif-else）" class="headerlink" title="if语法（if elif else）"></a>if语法（if elif else）</h4><p>注意冒号和严格的缩进<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> condition1:</div><div class="line">    do something</div><div class="line"><span class="keyword">elif</span> condition2:</div><div class="line">    do another thing</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    also do something</div></pre></td></tr></table></figure></p>
+<p>这种冒号和严格的缩进通常被称之为 复合语句<br>复合语句：由头部和主体组成的一组语句。代码头部以冒号(:)结尾，代码头部相对于代码主体进行缩进。</p>
+<h4 id="while语法"><a href="#while语法" class="headerlink" title="while语法"></a>while语法</h4><h4 id="try和except异常捕获"><a href="#try和except异常捕获" class="headerlink" title="try和except异常捕获"></a>try和except异常捕获</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">   语句块</div><div class="line"><span class="keyword">except</span>:</div><div class="line">   语句块</div></pre></td></tr></table></figure>
+<p>首先执行try语句块，如果try语句块没有问题，跳过except语句块。如果try语句块发生异常，执行except语句块<br>一个温度转换程序<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">inp=raw_input(<span class="string">'enter f temperature:'</span>)</div><div class="line"><span class="keyword">try</span>:</div><div class="line">    fahr=float(inp)</div><div class="line">    cel=(fahr<span class="number">-32.0</span>)*<span class="number">5.0</span>/<span class="number">9.0</span></div><div class="line">    <span class="keyword">print</span> cel</div><div class="line"><span class="keyword">except</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'please enter a number'</span></div></pre></td></tr></table></figure></p>
+<p>首先通过raw_input()函数捕获外界输入，并赋值给inp变量，如果此时输入不是数字，执行except语句块</p>
+<h4 id="def定义新函数"><a href="#def定义新函数" class="headerlink" title="def定义新函数"></a>def定义新函数</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></div><div class="line">    print(<span class="string">"this is a function"</span>)</div></pre></td></tr></table></figure>
+<p>函数定义的第一行叫做函数头，剩余的部分叫做函数体。函数头必须以冒号结束，函数体必须缩进。按照惯例，一般缩进4个空格。</p>
+<h2 id="二、python-多重赋值"><a href="#二、python-多重赋值" class="headerlink" title="二、python 多重赋值"></a>二、python 多重赋值</h2><p>python语言可以多重赋值（multiple assignment）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">person1,person2,person3=<span class="string">"ROSE"</span>,<span class="string">"JACK"</span>,<span class="string">"Djoy"</span></div><div class="line">var1=var2=var3=<span class="string">"apple"</span></div></pre></td></tr></table></figure></p>
+<p>注意：变量赋值前，右边首先完成计算。右边的表达式从左到右计算。<br>例如<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># Fibonacci series:</span></div><div class="line"><span class="meta">... </span><span class="comment"># the sum of two elements defines the next</span></div><div class="line"><span class="meta">... </span>a, b = <span class="number">0</span>, <span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">while</span> b &lt; <span class="number">1000</span>:</div><div class="line"><span class="meta">... </span>    print(b,end=<span class="string">','</span>)</div><div class="line"><span class="meta">... </span>    a, b = b, a+b</div></pre></td></tr></table></figure></p>
+<p>输出 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,<br>这里先算b=a+b再算a=b</p>
 
       
     </div>
@@ -458,8 +429,17 @@ var1=var2=var3=&quot;apple&quot;
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -512,6 +492,22 @@ var1=var2=var3=&quot;apple&quot;
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、python关键字"><span class="nav-number">1.</span> <span class="nav-text">一、python关键字</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#循环、判断"><span class="nav-number">1.1.</span> <span class="nav-text">循环、判断</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#if语法（if-elif-else）"><span class="nav-number">1.1.1.</span> <span class="nav-text">if语法（if elif else）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#while语法"><span class="nav-number">1.1.2.</span> <span class="nav-text">while语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#try和except异常捕获"><span class="nav-number">1.1.3.</span> <span class="nav-text">try和except异常捕获</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#def定义新函数"><span class="nav-number">1.1.4.</span> <span class="nav-text">def定义新函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、python-多重赋值"><span class="nav-number">2.</span> <span class="nav-text">二、python 多重赋值</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
